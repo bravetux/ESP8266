@@ -35,3 +35,33 @@ It’s an excellent project for:
 
 In short: **It’s an intuitive, user-friendly IoT system that brings smart control to basic electronics — with no app or cloud needed.**
 
+Here’s a breakdown of the **hardware components** used in this IoT-based Dual Relay Timer Control project:
+
+---
+
+### 🧰 **Hardware Components List**
+
+| Component                                               | Description                                                                                        | Quantity  |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | --------- |
+| 🔌 **ESP8266 NodeMCU**                                  | The main microcontroller with built-in Wi-Fi. Handles web server, relay control, and timing logic. | 1         |
+| ⚡ **2-Channel Relay Module**                            | Switches AC devices (like pump or solenoid valve) based on GPIO signals from ESP8266.             | 1         |
+| 🌊 **Submersible Water Pump** *(optional)*              | AC pump connected to one relay for dispensing or irrigation.                                       | 1         |
+| 🚰 **Solenoid Valve (220V AC)** *(optional)*            | Used for fluid control, connected to the second relay.                                             | 1         |
+| 🔌 **5V Power Supply / USB Cable**                      | Powers the ESP8266 board. Use stable 5V (minimum 500mA).                                           | 1         |
+| ⚡ **Relay Power Source (220V AC)**                      | Main AC supply line connected to the relay’s COM & NO/NC terminals.                               | 1         |
+| 🧪 **Resistors / Jumpers / Breadboard** *(for testing)* | For initial prototyping and safer wiring.                                                          | As needed |
+| 🔩 **Enclosure Box (optional)**                         | For mounting and safe insulation of live wires and relays.                                         | 1         |
+
+---
+
+### ⚠️ **Safety Note**
+
+Since relays switch **220V AC**, take proper precautions:
+
+* Use **screw terminals** and insulation
+* Do **not** touch live wires while testing
+* Keep the low-voltage (ESP8266 side) isolated from AC terminals
+
+---
+
+
